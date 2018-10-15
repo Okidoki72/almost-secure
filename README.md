@@ -2,9 +2,9 @@ basic chat app with e2e encryption
 
 interesting bits:
 
-- on ios most data (signal stores, messages) is stored in sqlite encrypted with sqlcipher, the passphrase is stored in keychain
-- private signal keys are also stored in keychain
-- on the backend, elixir is used to relay public keys and encrypted messages among users
+- on ios most data (signal stores, messages) is stored in sqlite encrypted with sqlcipher, the passphrase is stored on keychain
+- private signal keys are also stored on keychain
+- on the backend, elixir is used to relay public keys and encrypted messages between users
 
 ---
 
