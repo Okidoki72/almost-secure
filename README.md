@@ -1,4 +1,4 @@
-basic encrypted chat app 
+basic chat app with e2e encryption
 
 
 ---
