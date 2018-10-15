@@ -13,7 +13,7 @@ before_install:
 
 before_script:
   - cd backend && mix deps.get # TODO cache
-  - cd ../ios-client && pod install
+  - cd ../ios-client && pod repo update && pod install
 
 env:
   global:
