@@ -22,4 +22,4 @@ env:
 jobs:
   include:
     - stage: tests
-      script: make test
+      script: make tests
