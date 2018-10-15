@@ -1,0 +1,73 @@
+PODS:
+  - Birdsong (0.6.1):
+    - Starscream (= 3.0.2)
+  - GRDBCipher (3.4.0):
+    - SQLCipher (~> 3.4.1)
+  - KeychainSwift (12.0.0)
+  - MessageInputBar/Core (0.4.1)
+  - MessageKit (1.0.0):
+    - MessageInputBar/Core
+  - PromisesObjC (1.2.3)
+  - PromisesSwift (1.2.3):
+    - PromisesObjC (= 1.2.3)
+  - Result (4.0.0)
+  - Reusable (4.0.4):
+    - Reusable/Storyboard (= 4.0.4)
+    - Reusable/View (= 4.0.4)
+  - Reusable/Storyboard (4.0.4)
+  - Reusable/View (4.0.4)
+  - SQLCipher (3.4.2):
+    - SQLCipher/standard (= 3.4.2)
+  - SQLCipher/common (3.4.2)
+  - SQLCipher/standard (3.4.2):
+    - SQLCipher/common
+  - Starscream (3.0.2)
+
+DEPENDENCIES:
+  - Birdsong (~> 0.6)
+  - GRDBCipher (~> 3.3)
+  - KeychainSwift (~> 12.0)
+  - "MessageKit (from `git@github.com:MessageKit/MessageKit.git`, branch `development`)"
+  - PromisesSwift (~> 1.2.3)
+  - Result (~> 4.0)
+  - Reusable (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Birdsong
+    - GRDBCipher
+    - KeychainSwift
+    - MessageInputBar
+    - PromisesObjC
+    - PromisesSwift
+    - Result
+    - Reusable
+    - SQLCipher
+    - Starscream
+
+EXTERNAL SOURCES:
+  MessageKit:
+    :branch: development
+    :git: "git@github.com:MessageKit/MessageKit.git"
+
+CHECKOUT OPTIONS:
+  MessageKit:
+    :commit: aa734da840b373cf71f864246190866f779d41a0
+    :git: "git@github.com:MessageKit/MessageKit.git"
+
+SPEC CHECKSUMS:
+  Birdsong: 7559da13eb8e4b6334f2df75ea8a1199d7bc4bc3
+  GRDBCipher: dd6fbf24781b6fc79f2041a452c4c95d6503cdbf
+  KeychainSwift: d5e776578587ee5958ce36601df22f168f65138a
+  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
+  MessageKit: 0aaaa6115a9b4497a65fcdfed5dad270fbc8f2b2
+  PromisesObjC: a3a4263d8a9260214267e0b3788d0f83466ad449
+  PromisesSwift: f7f45c21986419e85f7c5b645ed8c6a2c10c04b4
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  Reusable: 7fc772097df3e5fc86f59d8a7af9708e49b5ff55
+  SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
+  Starscream: b512c62f6706421221b5ceb2ba01a9f58aca5bea
+
+PODFILE CHECKSUM: 69805d6b50885a70344686714e570b67c0b5e909
+
+COCOAPODS: 1.5.3
