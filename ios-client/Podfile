@@ -9,7 +9,7 @@ target "almost-secure" do
   pod "KeychainSwift", "~> 12.0"
   pod "GRDBCipher", "~> 3.3"
   # until https://github.com/MessageKit/MessageKit/issues/901
-  pod "MessageKit", :git => "git@github.com:MessageKit/MessageKit.git", :branch => "development"
+  pod "MessageKit", :git => "https://github.com/MessageKit/MessageKit.git", :branch => "development"
 #  pod "SQLCipher", :modular_headers => true
   pod "Reusable", "~> 4.0"
   pod "PromisesSwift", "~> 1.2.3"
