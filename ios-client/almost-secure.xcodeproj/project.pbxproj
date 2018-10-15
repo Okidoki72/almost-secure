@@ -59,6 +59,8 @@
 		4EB677CD2174809E00CEDAEE /* SignalStoresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E60B0BE216A18C000681B3F /* SignalStoresTests.swift */; };
 		4EB677CE217480A100CEDAEE /* HTTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6387D216E723800094F46 /* HTTPTests.swift */; };
 		4EB677CF217480A600CEDAEE /* AppAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E60B0D7216BA91D00681B3F /* AppAccountTests.swift */; };
+		4EB677E42174C1E400CEDAEE /* SignalProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB677DB2174C19B00CEDAEE /* SignalProtocol.framework */; };
+		4EB677E52174C1E400CEDAEE /* SignalProtocol.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB677DB2174C19B00CEDAEE /* SignalProtocol.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B402EA20E6ACBA20C2E0C2E8 /* Pods_almost_secure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4DB7985BB7B613D951B7F8 /* Pods_almost_secure.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,48 @@
 			remoteGlobalIDString = 4E9C83492168B81400279B7B;
 			remoteInfo = "almost-secure";
 		};
+		4EB677DA2174C19B00CEDAEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE1F0C35203467B3003F1C04;
+			remoteInfo = "libsignal-protocol-swift iOS";
+		};
+		4EB677DC2174C19B00CEDAEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE1F0C5420346830003F1C04;
+			remoteInfo = "libsignal-protocol-swift macOS";
+		};
+		4EB677DE2174C19B00CEDAEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE1F0C612034685B003F1C04;
+			remoteInfo = "libsignal-protocol-swift tvOS";
+		};
+		4EB677E02174C19B00CEDAEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE1F0C6E20346875003F1C04;
+			remoteInfo = "libsignal-protocol-swift watchOS";
+		};
+		4EB677E22174C19B00CEDAEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE1F0C3E203467B3003F1C04;
+			remoteInfo = "libsignal-protocol-swiftTests";
+		};
+		4EB677E82174C21100CEDAEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CE1F0C34203467B3003F1C04;
+			remoteInfo = "libsignal-protocol-swift iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +123,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4EB677E52174C1E400CEDAEE /* SignalProtocol.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +189,7 @@
 		4EB677BB21746E4600CEDAEE /* SearchChannelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchChannelTests.swift; sourceTree = "<group>"; };
 		4EB677BD2174703C00CEDAEE /* ChatChannelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatChannelTests.swift; sourceTree = "<group>"; };
 		4EB677C721747D5300CEDAEE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "libsignal-protocol-swift.xcodeproj"; path = "Submodules/Signal/libsignal-protocol-swift.xcodeproj"; sourceTree = "<group>"; };
 		987237F570A59A6000A16941 /* Pods_almost_secureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_almost_secureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CF084B460DC1E99B368D50 /* Pods-almost-secure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-almost-secure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-almost-secure/Pods-almost-secure.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4DB7985BB7B613D951B7F8 /* Pods_almost_secure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_almost_secure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB677E42174C1E400CEDAEE /* SignalProtocol.framework in Frameworks */,
 				B402EA20E6ACBA20C2E0C2E8 /* Pods_almost_secure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +336,7 @@
 				4E60B0BD216A18C000681B3F /* almost-secureTests */,
 				4E9C834B2168B81400279B7B /* Products */,
 				BBA34AD1EAFA0C91A57FD552 /* Pods */,
+				4EB677D02174C17D00CEDAEE /* Submodules */,
 				7D70E315021AECEDF5FD5B2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -362,6 +410,26 @@
 			path = Channels;
 			sourceTree = "<group>";
 		};
+		4EB677D02174C17D00CEDAEE /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */,
+			);
+			name = Submodules;
+			sourceTree = "<group>";
+		};
+		4EB677D22174C19B00CEDAEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EB677DB2174C19B00CEDAEE /* SignalProtocol.framework */,
+				4EB677DD2174C19B00CEDAEE /* SignalProtocol.framework */,
+				4EB677DF2174C19B00CEDAEE /* SignalProtocol.framework */,
+				4EB677E12174C19B00CEDAEE /* SignalProtocol.framework */,
+				4EB677E32174C19B00CEDAEE /* libsignal-protocol-swiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7D70E315021AECEDF5FD5B2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +486,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4EB677E92174C21100CEDAEE /* PBXTargetDependency */,
 			);
 			name = "almost-secure";
 			productName = "almost-secure";
@@ -454,6 +523,12 @@
 			mainGroup = 4E9C83412168B81300279B7B;
 			productRefGroup = 4E9C834B2168B81400279B7B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4EB677D22174C19B00CEDAEE /* Products */;
+					ProjectRef = 4EB677D12174C19B00CEDAEE /* libsignal-protocol-swift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4E9C83492168B81400279B7B /* almost-secure */,
@@ -461,6 +536,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4EB677DB2174C19B00CEDAEE /* SignalProtocol.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SignalProtocol.framework;
+			remoteRef = 4EB677DA2174C19B00CEDAEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4EB677DD2174C19B00CEDAEE /* SignalProtocol.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SignalProtocol.framework;
+			remoteRef = 4EB677DC2174C19B00CEDAEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4EB677DF2174C19B00CEDAEE /* SignalProtocol.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SignalProtocol.framework;
+			remoteRef = 4EB677DE2174C19B00CEDAEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4EB677E12174C19B00CEDAEE /* SignalProtocol.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SignalProtocol.framework;
+			remoteRef = 4EB677E02174C19B00CEDAEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4EB677E32174C19B00CEDAEE /* libsignal-protocol-swiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "libsignal-protocol-swiftTests.xctest";
+			remoteRef = 4EB677E22174C19B00CEDAEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4E60B0BA216A18C000681B3F /* Resources */ = {
@@ -629,6 +742,11 @@
 			isa = PBXTargetDependency;
 			target = 4E9C83492168B81400279B7B /* almost-secure */;
 			targetProxy = 4E60B0C1216A18C000681B3F /* PBXContainerItemProxy */;
+		};
+		4EB677E92174C21100CEDAEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libsignal-protocol-swift iOS";
+			targetProxy = 4EB677E82174C21100CEDAEE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
