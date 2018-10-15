@@ -12,7 +12,7 @@ before_install:
   - mix local.hex --force
 
 before_script:
-  - cd backend && mix deps.get # TODO cache
+  - cd backend && mix deps.get && cd .. # TODO cache
 
 env:
   global:
