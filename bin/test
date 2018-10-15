@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+cd backend && elixir --detached -S mix phoenix.server
+
+cd ../ios-client
+xcodebuild \
+  -workspace almost-secure.xcworkspace \
+  -scheme almost-secure \
+  -sdk iphonesimulator \
+  -destination 'platform=iOS Simulator,name=iPhone 5s,OS=12.0' \
+  test | xcpretty
+
+lsof -i tcp:4000 | grep -v PID | awk '{print $2}' | xargs kill
