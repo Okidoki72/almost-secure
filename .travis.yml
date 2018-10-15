@@ -1,0 +1,26 @@
+language: objective-c
+osx_image: xcode10
+xcode_project: ios-client/almost-secure.xcodeproj
+
+cache:
+  directories:
+    - Pods
+
+before_install:
+  - brew install elixir || true
+  - mix local.rebar --force
+  - mix local.hex --force
+
+before_script:
+  - cd backend && mix deps.get # TODO cache
+  - cd ../ios-client && pod repo update && pod install && cd ..
+
+env:
+  global:
+    - LANG=en_US.UTF-8
+    - LC_ALL=en_US.UTF-8
+
+jobs:
+  include:
+    - stage: tests
+      script: make tests
