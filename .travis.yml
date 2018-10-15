@@ -8,6 +8,8 @@ cache:
 
 before_install:
   - brew install elixir || true
+  - mix local.rebar --force
+  - mix local.hex --force
 
 before_script:
   - cd backend && mix deps.get # TODO cache
